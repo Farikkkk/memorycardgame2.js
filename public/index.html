@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Card Game</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/canvas.css" />
+    <link rel="stylesheet" href="/confetti.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Neuton&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <canvas id="canvas1"></canvas>
+
+    <div class="name-info">
+      <h1>Memory Card Game</h1>
+      <input
+        type="text"
+        placeholder="Enter Your Name..."
+        class="input"
+        name="username"
+        autofocus
+      />
+      <button class="play-button">Start Game</button>
+    </div>
+    <div class="container">
+      <h2 class="steps"><span id="steps"></span></h2>
+      <div class="timer">Time: <span id="time">00 : 00</span></div>
+      <div class="game"></div>
+      <button class="reset-button">Reset</button>
+      <div class="result"></div>
+      <h2 class="difficulty-info">Choose your difficulty</h2>
+      <div class="buttons">
+        <button class="card-button" data-cards="12">12 cards</button>
+        <button class="card-button" data-cards="16">16 cards</button>
+        <button class="card-button" data-cards="24">24 cards</button>
+        <h2 class="best-res">The Best Results :</h2>
+        <div class="records">
+          <h2 data-best-result="12">Records 12:</h2>
+          <h2 data-best-result="16">Records 16:</h2>
+          <h2 data-best-result="24">Records 24:</h2>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/script.js"></script>
+    <script type="module" src="/canvas.js"></script>
+    <script type="module" src="/confetti.js"></script>
+  </body>
+</html>
